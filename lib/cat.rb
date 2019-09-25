@@ -4,7 +4,7 @@ class Cat
   attr_writer
   @@all= []
 
-  def initialize(name, @owner)
+  def initialize(name, owner)
     @name= name
   end
 
