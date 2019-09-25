@@ -1,5 +1,5 @@
 class Dog
-  attr_accessor :owner
+  attr_accessor :owner, :mood
   attr_reader :name
   attr_writer
   @@all= []
@@ -7,5 +7,7 @@ class Dog
   def initialize(name, owner)
     @name= name
     @owner= owner
+    @mood= "nervous"
+    @@all << self
   end
 end
